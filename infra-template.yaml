@@ -1,0 +1,23 @@
+Resources:
+  S3Bucket:
+    DeletionPolicy: Retain
+    Type: "AWS::S3::Bucket"
+    Description: Sample S3 Bucket Created using CloudFormation
+    Properties:
+      AccessControl: Private
+      PublicAccessBlockConfiguration:
+        BlockPublicAcls: true
+        BlockPublicPolicy: true
+        IgnorePublicAcls: true
+        RestrictPublicBuckets: true
+      BucketEncryption:
+        ServerSideEncryptionConfiguration:
+          - ServerSideEncryptionByDefault:
+              SSEAlgorithm: AES256
+      VersioningConfiguration:
+        Status: Enabled
+
+Outputs:
+  S3Bucket:
+    Description: Bucket Created using this template.
+    Value: !Ref S3Bucket
