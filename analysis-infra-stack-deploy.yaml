@@ -1,4 +1,0 @@
-StackName: analysis-infra-stack # Replace with your stack's name
-TemplateFile: ./infra-template.yaml # Path to the main template file
-
-OnFailure: DO_NOTHING # Options: DO_NOTHING, ROLLBACK, DELETE
