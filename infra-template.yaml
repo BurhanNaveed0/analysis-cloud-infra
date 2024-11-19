@@ -2,4 +2,4 @@ Resources:
   DemoBucket:
     Type: AWS::S3::Bucket
     Properties:
-      BucketName: "Test Bucket"
+      BucketName: "test-bucket-unique-name-2195845"
